@@ -1,2 +1,12 @@
-# Tax-Revenue-Dashboard
-This repository includes latest source code, important source and metadata files, and Tableau files for Tax Revenue Dashboard
+# [Tax-Revenue-Dashboard](https://dataviz.worldbank.org/views/TaxRevenueDashboard/TaxRevenueDashboard?:showAppBanner=false&&:display_count=n&&:showVizHome=n&&:origin=viz_share_link&&:embed=y&&:isGuestRedirectFromVizportal=y)
+This dashboard uses data from [UNU Wider Government Revenue Dataset (GRD) dataset](https://www.wider.unu.edu/project/grd-%E2%80%93-government-revenue-dataset) along with some additional calculations done by World Bank Fiscal Policy and Sustainable Growth (FPSG) Team. We are using Frontier Analysis in Stata to do these additional calculations.
+
+This repository includes latest source code, important data and metadata files, and Tableau files for Tax Revenue Dashboard
+
+## Files
+- [Tax Revenue Dashboard - Final.pptx](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/Tax%20Revenue%20Dashboard%20-%20Final.pptx): This file is includes training material on how to use the dashboard.
+- [country_code_updated.xls](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/country_code_updated.xls): This file contains country metadata like Income Group, Region, etc.
+- [rev_tax_data2.rar](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/rev_tax_data2.rar): This archive file contains a CSV file containing all the data used by Tableau dashboard.
+- [tax_revenue_4_mar_2022.rar](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/tax_revenue_4_mar_2022.rar): This archive file contains a Excel file containing the extracted and calculated data into a raw format.
+- [rev_tax_v6_mobilelayouts.twb](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/rev_tax_v6_mobilelayouts.twb): This file contains the whole Tableau workbook containing all the sheets and dashboard along with some additional calculations done within Tableau.
+- [data.py](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/data.py) and [clsTaxRevenueDashboard.py](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/clsTaxRevenueDashboard.py): These two Python files are used to convert the data from Excel file inside "tax_revenue_4_mar_2022.rar" file (original format) to data in CSV format inside "rev_tax_data2.rar" file. These files also include some data transformation, and validation code to ensure data integrity. Currently we are using clsTaxRevenueDashboard.py file to convert the data from raw to final format. These Python source files also include some comments and other documentation on the use of various functions.
