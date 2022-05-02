@@ -1,9 +1,26 @@
 # [Tax-Revenue-Dashboard](https://dataviz.worldbank.org/views/TaxRevenueDashboard/TaxRevenueDashboard?:showAppBanner=false&&:display_count=n&&:showVizHome=n&&:origin=viz_share_link&&:embed=y&&:isGuestRedirectFromVizportal=y)
-This dashboard uses data from [UNU Wider Government Revenue Dataset (GRD) dataset](https://www.wider.unu.edu/project/grd-%E2%80%93-government-revenue-dataset) along with some additional calculations done by World Bank Fiscal Policy and Sustainable Growth (FPSG) Team. We are using Frontier Analysis in Stata to do these additional calculations.
+The Tax Revenue Dashboard is a tool for benchmarking tax policy performance. The dashboard aims to provide policymakers and researchers with necessary data and information to conduct a high-level analysis of a country's tax system. By using the dashboard, users can:
+1. Benchmark a country’s tax performance against other countries
+2. Analyze tax collection trends and tax structure
+3. Compare a country’s performance with the average and best performer (tax capacity/tax gap)
+4. Evaluate the performance of a country’s tax collection using the tax buoyancy of the major taxes
+5. See trends in rates of major taxes
+6. Compare the tax performance of regions and income groups
 
-This repository includes latest source code, important data and metadata files, and Tableau files for Tax Revenue Dashboard
+The dashboard will be expanded to include other relevant data such as C-efficiency, the corporate Marginal Effective Tax Rate (METR), and the corporate Average Effective Tax Rate (AETR), and tax incentives.
 
-## Files
+## Data sources and methodology
+1. This dashboard uses the [GRD dataset from UNUWider](https://www.wider.unu.edu/project/grd-%E2%80%93-government-revenue-dataset) updated with data available from public websites of several countries’ Ministries of Finance.
+2. Tax rates are sourced from [KPMG’s online dataset](https://home.kpmg/xx/en/home/services/tax/tax-tools-and-resources/tax-rates-online.html).
+3. The potential (tax capacity) of a country is calculated by using the [Stochastic Frontier Analysis module from Stata](https://www.stata.com/manuals13/rfrontier.pdf) controlling for per capita GDP and the openness.
+
+## Using the dashboard
+Please download the [Tax Revenue Dashboard presentation](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/Tax%20Revenue%20Dashboard%20-%20Final.pptx) to learn more about how you can use the dashboard and understand the interaction among various charts and dashboards. The code and data used in Tax Revenue Dashboard can be accessed at [World Bank Revenue Academy GitHub](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard) page.
+
+## Dashboard link
+Click [here](https://dataviz.worldbank.org/views/TaxRevenueDashboard/TaxRevenueDashboard?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&:embed=y&:isGuestRedirectFromVizportal=y) to access Tax Revenue Dashboard
+
+## Files in this repository
 - [Tax Revenue Dashboard - Final.pptx](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/Tax%20Revenue%20Dashboard%20-%20Final.pptx): This file is includes training material on how to use the dashboard.
 - [country_code_updated.xls](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/country_code_updated.xls): This file contains country metadata like Income Group, Region, etc.
 - [rev_tax_data2.rar](https://github.com/Revenue-Academy/Tax-Revenue-Dashboard/blob/main/rev_tax_data2.rar): This archive file contains a CSV file containing all the data used by Tableau dashboard.
